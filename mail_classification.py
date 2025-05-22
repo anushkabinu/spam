@@ -31,3 +31,7 @@ print(classification_report(y_test, y_pred))
 # Step 4: Save the model and vectorizer
 joblib.dump(model, 'spam_classifier_model.pkl')
 joblib.dump(vectorizer, 'vectorizer.pkl')
+from google.colab import files
+files.download('spam_classifier_model.pkl')
+files.download('vectorizer.pkl')
+
