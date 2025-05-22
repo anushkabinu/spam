@@ -1,3 +1,9 @@
+import joblib
+import streamlit as st
+
+# These files must be in the same directory
+model = joblib.load("spam_classifier_model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
 # streamlit_app.py
 
 import streamlit as st
