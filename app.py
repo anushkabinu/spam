@@ -1,3 +1,8 @@
+import streamlit as st
+import os
+
+st.write("Current directory:", os.getcwd())
+st.write("Files:", os.listdir())
 import joblib
 import streamlit as st
 
